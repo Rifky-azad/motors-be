@@ -62,6 +62,9 @@
     "vehicles": {
       "via": "users_permissions_user",
       "collection": "vehicle"
+    },
+    "name": {
+      "type": "string"
     }
   }
 }

@@ -25,9 +25,9 @@
       "type": "string"
     },
     "users_permissions_user": {
+      "via": "vehicles",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "vehicles"
+      "model": "user"
     }
   }
 }
