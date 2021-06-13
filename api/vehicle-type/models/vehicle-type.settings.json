@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vehicle_types",
+  "info": {
+    "name": "vehicle_type"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "vehicle": {
+      "model": "vehicle"
+    }
+  }
+}

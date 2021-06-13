@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vehicles",
+  "info": {
+    "name": "vehicle",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "vehicle_number": {
+      "type": "string"
+    },
+    "model": {
+      "type": "string"
+    },
+    "milage": {
+      "type": "string"
+    },
+    "service_notes": {
+      "type": "string"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "vehicles"
+    }
+  }
+}

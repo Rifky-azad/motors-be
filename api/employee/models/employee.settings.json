@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "employees",
+  "info": {
+    "name": "employee"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "NIC": {
+      "type": "string"
+    },
+    "Address": {
+      "type": "string"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "OnProcess",
+        "Free"
+      ],
+      "default": "Free"
+    },
+    "DOB": {
+      "type": "date"
+    }
+  }
+}

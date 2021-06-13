@@ -1,0 +1,15 @@
+{
+  "kind": "collectionType",
+  "collectionName": "customers",
+  "info": {
+    "name": "customer",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {}
+}
