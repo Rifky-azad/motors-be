@@ -28,6 +28,10 @@
       "via": "vehicles",
       "plugin": "users-permissions",
       "model": "user"
+    },
+    "vehicle_type": {
+      "via": "vehicles",
+      "model": "vehicle-type"
     }
   }
 }
