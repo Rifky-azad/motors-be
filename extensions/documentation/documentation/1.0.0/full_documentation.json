@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "06/13/2021 7:01:36 PM"
+    "x-generation-date": "06/15/2021 10:59:08 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4440,37 +4440,43 @@
           "name": {
             "type": "string"
           },
-          "vehicle": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "vehicle_number": {
-                "type": "string"
-              },
-              "model": {
-                "type": "string"
-              },
-              "milage": {
-                "type": "string"
-              },
-              "service_notes": {
-                "type": "string"
-              },
-              "users_permissions_user": {
-                "type": "string"
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
+          "vehicles": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "vehicle_number": {
+                  "type": "string"
+                },
+                "model": {
+                  "type": "string"
+                },
+                "milage": {
+                  "type": "string"
+                },
+                "service_notes": {
+                  "type": "string"
+                },
+                "users_permissions_user": {
+                  "type": "string"
+                },
+                "vehicle_type": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
               }
             }
           },
@@ -4485,8 +4491,11 @@
           "name": {
             "type": "string"
           },
-          "vehicle": {
-            "type": "string"
+          "vehicles": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",
@@ -4574,6 +4583,34 @@
               }
             }
           },
+          "vehicle_type": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "vehicles": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -4595,6 +4632,9 @@
             "type": "string"
           },
           "users_permissions_user": {
+            "type": "string"
+          },
+          "vehicle_type": {
             "type": "string"
           },
           "published_at": {
@@ -4853,6 +4893,9 @@
                   "type": "string"
                 },
                 "users_permissions_user": {
+                  "type": "string"
+                },
+                "vehicle_type": {
                   "type": "string"
                 },
                 "published_at": {

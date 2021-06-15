@@ -538,37 +538,43 @@
           "name": {
             "type": "string"
           },
-          "vehicle": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "vehicle_number": {
-                "type": "string"
-              },
-              "model": {
-                "type": "string"
-              },
-              "milage": {
-                "type": "string"
-              },
-              "service_notes": {
-                "type": "string"
-              },
-              "users_permissions_user": {
-                "type": "string"
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
+          "vehicles": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "vehicle_number": {
+                  "type": "string"
+                },
+                "model": {
+                  "type": "string"
+                },
+                "milage": {
+                  "type": "string"
+                },
+                "service_notes": {
+                  "type": "string"
+                },
+                "users_permissions_user": {
+                  "type": "string"
+                },
+                "vehicle_type": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
               }
             }
           },
@@ -583,8 +589,11 @@
           "name": {
             "type": "string"
           },
-          "vehicle": {
-            "type": "string"
+          "vehicles": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",
